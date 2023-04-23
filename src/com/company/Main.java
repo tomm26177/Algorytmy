@@ -12,12 +12,10 @@ public class Main {
         TableGeneration tableGeneration = new TableGeneration();
         int[] Array = tableGeneration.generate(10,0,100);
 
+         BubbleSort bubbleSort =  new BubbleSort()  ;
+         bubbleSort.BubbleSortMethod(Array);
 
-        SelectionSort selectionSort = new SelectionSort();
-        System.out.println(Arrays.toString(selectionSort.SelectionSortMethod(Array)));
-        BinarySearch binarySearch= new BinarySearch();
-        System.out.println(
-        binarySearch.BinarySearchFunction(Array,7));
+        System.out.println(Arrays.toString(Array));
 
     }
 }
